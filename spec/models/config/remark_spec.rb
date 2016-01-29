@@ -1,8 +1,8 @@
 require "spec_helper"
 require "app/models/config/base"
-require "app/models/config/mdast"
+require "app/models/config/remark"
 
-describe Config::Mdast do
+describe Config::Remark do
   it_behaves_like "a service based linter" do
     let(:raw_config) do
       <<-EOS.strip_heredoc
@@ -14,9 +14,9 @@ describe Config::Mdast do
 
     let(:hound_config_content) do
       {
-        "mdast" => {
+        "remark" => {
           "enabled" => true,
-          "config_file" => "config/.mdastrc",
+          "config_file" => "config/.remarkrc",
         },
       }
     end

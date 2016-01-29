@@ -1,5 +1,5 @@
 module Config
-  class Mdast < Base
+  class Remark < Base
     private
 
     def parse(file_content)
