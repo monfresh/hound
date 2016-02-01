@@ -1,5 +1,5 @@
 require "spec_helper"
-require "config/initializers/constants"
+load_constants
 require "attr_extras"
 require "lib/github_api"
 require "json"
