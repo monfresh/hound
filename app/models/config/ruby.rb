@@ -13,7 +13,7 @@ module Config
     private
 
     def parse(file_content)
-      Parser.yaml(file_content)
+      Config::Parser.yaml(file_content)
     end
 
     def parse_inherit_from(config)

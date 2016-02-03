@@ -3,7 +3,7 @@ module Config
     private
 
     def parse(file_content)
-      result = Parser.yaml(file_content)
+      result = Config::Parser.yaml(file_content)
 
       ensure_correct_type(result)
     end
